@@ -290,3 +290,16 @@ function applyGoogleLanguage(lang) {
     googleSelect.dispatchEvent(new Event("change"));
 
 }
+
+/* AUTOMATIC COPYRIGHT YEAR */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const yearElement = document.getElementById("current-year");
+
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+
+});
+
