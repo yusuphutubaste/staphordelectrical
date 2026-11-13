@@ -37,54 +37,64 @@
 <p><strong>Contact Persons:</strong> Staphord Telesphol Nsabi / Freeman Emanuel Manga</p>
 </div>
 
+
 <br><br>
 
 <h3>Send Us a Message via WhatsApp</h3>
-
 <form id="quoteForm">
-
     <label for="clientName">Your Name / Company Name:</label>
     <input
         type="text"
         id="clientName"
+        name="clientName"
         placeholder="Enter your name"
-        required
-    >
-
+        autocomplete="name"
+        required  >
     <label for="clientPhone">Your Phone Number:</label>
     <input
         type="tel"
         id="clientPhone"
+        name="clientPhone"
         placeholder="e.g. 0712 345 678"
+        autocomplete="tel"
+        required >
+    <label for="serviceType">Select Service Needed:</label>
+    <select
+        id="serviceType"
+        name="serviceType"
         required
     >
-
-    <label for="serviceType">Select Service Needed:</label>
-    <select id="serviceType" required>
         <option value="">-- Select a Service --</option>
-        <option value="Electrical Installation - Buildings">Electrical Installation - Buildings</option>
-        <option value="Industrial Electrical Works">Industrial Electrical Works</option>
-        <option value="Solar & Renewable Power">Solar & Renewable Power</option>
-        <option value="Maintenance & Repair">Maintenance & Repair</option>
-        <option value="Sub-Contracting / BOQ Quote">Sub-Contracting / BOQ Quote</option>
+        <option value="Electrical Installation - Buildings">
+            Electrical Installation - Buildings
+        </option>
+        <option value="Industrial Electrical Works">
+            Industrial Electrical Works
+        </option>
+        <option value="Solar & Renewable Power">
+            Solar & Renewable Power
+        </option>
+        <option value="Maintenance & Repair">
+            Maintenance & Repair
+        </option>
+        <option value="Sub-Contracting / BOQ Quote">
+            Sub-Contracting / BOQ Quote
+        </option>
     </select>
-
     <label for="clientMessage">Project Details / Location:</label>
     <textarea
         id="clientMessage"
+        name="clientMessage"
         rows="5"
         placeholder="Describe your project and location..."
         required
     ></textarea>
-
     <button type="submit">
         Send via WhatsApp
     </button>
 
 </form>
 
-</div>
-</div>
 
 <!-- Professional Multi-Column Footer -->
 <footer class="site-footer">
