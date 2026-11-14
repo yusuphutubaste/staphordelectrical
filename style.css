@@ -763,3 +763,32 @@ textarea:focus-visible {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* LOGO - Picha na jina la kampuni */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+/* LOGO - Muonekano kwenye simu */
+
+@media (max-width: 600px) {
+    .logo-img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .logo {
+        font-size: 15px;
+        gap: 7px;
+    }
+}
+
